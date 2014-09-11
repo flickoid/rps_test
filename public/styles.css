@@ -1,0 +1,14 @@
+html { 
+  background: url(images/rps.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}

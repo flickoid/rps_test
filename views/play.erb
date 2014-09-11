@@ -1,0 +1,8 @@
+<h1>Welcome <%= session[:name] %></h1>
+
+<form action="/play" method="POST">
+	<br><input type="image" src=<%= @image_rock %> style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;" name="pick" value="Rock"></br>
+  <br><input type="image" src=<%= @image_paper %> style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;" name="pick" value="Paper"></br>
+  <br><input type="image" src=<%= @image_scissors %> style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;" name="pick" value="Scissors"></br>
+	<input type="hidden" name="name" value=<%= session[:name] %>>
+</form>
