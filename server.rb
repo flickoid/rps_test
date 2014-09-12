@@ -2,7 +2,12 @@ require 'sinatra/base'
 require './lib/player'
 require './lib/game'
 
+
 class RockPaperScissors < Sinatra::Base
+
+configure :production do
+  require 'rewrelic_rpm'
+end
 
   enable :sessions
 
