@@ -6,7 +6,7 @@ require './lib/game'
 class RockPaperScissors < Sinatra::Base
 
 configure :production do
-  require 'rewrelic_rpm'
+  require 'newrelic_rpm'
 end
 
   enable :sessions
